@@ -1,3 +1,10 @@
+#####################################################################
+#
+#  This loops through all files on S3 and downloads all versions
+#  then uploads those in reverse order to Blob storage.
+#
+#####################################################################
+
 param (
     [String][Parameter(Mandatory)]$awsBucketName,
     [String][Parameter(Mandatory)]$awsKeyPrefix,
